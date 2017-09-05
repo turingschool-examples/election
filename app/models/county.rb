@@ -3,7 +3,4 @@ class County < ApplicationRecord
   has_many :primary_results
   validates :name, presence: true
 
-  def state_name
-    state.name
-  end
 end
