@@ -1,0 +1,9 @@
+<h1><%= @state.name %></h1>
+
+<div class="summary">
+   <ul>
+     <% @state.candidates.each do |candidate| %>
+       <li><%= candidate.name %>: <%= candidate.total_votes_by_state(@state) %></li>
+     <% end %>
+   </ul>
+</div>
