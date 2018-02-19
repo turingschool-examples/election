@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+A repository with information from the 2016 election pulled from [this Kaggle dataset](https://www.kaggle.com/benhamner/2016-us-election).
 
-* Ruby version
+## Setup
 
-* System dependencies
+```
+$ bundle
+$ rake db:create db:migrate db:seed
+```
 
-* Configuration
+## Test Suite
 
-* Database creation
+There is an existing test suite with some model tests already implemented. Run this suite with:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ rspec
+```
