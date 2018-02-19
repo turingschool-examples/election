@@ -18,3 +18,9 @@ There is an existing test suite with some model tests already implemented. Run t
 ```
 $ rspec
 ```
+
+We recommend that you attempt to resolve the failing specs in the following order:
+
+* County
+* PrimaryResult
+* Candidate
