@@ -1,14 +1,14 @@
-require 'rails_helper'
+require "rails_helper"
 
-describe Candidate do
-  describe 'Validations' do
+describe Candidate, type: :model do
+  describe "Validations" do
     it { should validate_presence_of(:name) }
     it { should validate_uniqueness_of(:name) }
   end
 
-  describe 'Instance Methods' do
-    describe '#party_name' do
-      it 'returns the name of party of the candidate' do
+  describe "Instance Methods" do
+    describe "#party_name" do
+      it "returns the name of party of the candidate" do
         party = Party.create(name: "Republican")
         can = create(:candidate, party: party)
 

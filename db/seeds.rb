@@ -1,8 +1,8 @@
-require 'csv'
+require "csv"
 
 class Importer
   def self.import
-    @results = CSV.open('./db/data/primary_results.csv', headers: true, header_converters: :symbol)
+    @results = CSV.open("./db/data/primary_results.csv", headers: true, header_converters: :symbol)
     start_time = Time.now
     @results.each do |result|
       ActiveRecord::Base.transaction do

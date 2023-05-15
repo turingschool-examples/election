@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :primary_result do
     county
     candidate

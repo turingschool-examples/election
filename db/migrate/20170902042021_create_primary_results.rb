@@ -1,4 +1,4 @@
-class CreatePrimaryResults < ActiveRecord::Migration[5.1]
+class CreatePrimaryResults < ActiveRecord::Migration[7.0]
   def change
     create_table :primary_results do |t|
       t.references :county, foreign_key: true

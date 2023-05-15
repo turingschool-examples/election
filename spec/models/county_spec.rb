@@ -1,14 +1,14 @@
-require 'rails_helper'
+require "rails_helper"
 
-describe County do
+RSpec.describe County, type: :model do
   describe "Validations" do
     it { should validate_presence_of :name }
   end
 
-  describe 'Instance Methods' do
-    describe '::state_name' do
-      it 'returns the name of the related state' do
-        tx = State.create(name: "Texas", abbreviation: "TX")
+  describe "Instance Methods" do
+    describe "#state_name" do
+      it "returns the name of the related state" do
+        tx = State.create!(name: "Texas", abbreviation: "TX")
         county = create(:county, state: tx)
 
         expect(county.state_name).to eq("Texas")

@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :party do
     sequence :name do |n|
       names    = ["Democrat", "Republican", "Green", "Liberatrian"]
