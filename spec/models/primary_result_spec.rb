@@ -1,12 +1,12 @@
-require 'rails_helper'
+require "rails_helper"
 
-describe PrimaryResult do
+RSpec.describe PrimaryResult do
   describe "Validations" do
     it { should validate_presence_of :votes }
   end
 
-  describe 'Class Methods' do
-    it '::total' do
+  describe "Class Methods" do
+    it ".total" do
       create(:primary_result, votes: 4)
       create(:primary_result, votes: 3)
 
@@ -14,8 +14,8 @@ describe PrimaryResult do
     end
   end
 
-  describe 'Instance Methods' do
-    it '#state_name' do
+  describe "Instance Methods" do
+    it "#state_name" do
       state  = State.create(name: "Alabama", abbreviation: "AL")
       county = create(:county, state: state)
       pr     = create(:primary_result, county: county)
