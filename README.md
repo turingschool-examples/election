@@ -4,7 +4,7 @@
 
 A repository with information from the 2016 election pulled from [this Kaggle dataset](https://www.kaggle.com/benhamner/2016-us-election).
 
-Your job is to fix the failing tests in this application. 
+Your job is to fix the failing tests in this application by writing new methods to fit the needs outlined in the model specs. Some of the methods will be class methods, while others will be instance methods. 
 
 ## Setup
 
